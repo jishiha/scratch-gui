@@ -18,6 +18,12 @@ import makeymakeyImage from './makeymakey.png';
 import makeymakeyInsetImage from './makeymakey-small.svg';
 import boostImage from './boost.png';
 import boostInsetImage from './boost-small.svg';
+import helloImage from './hello.png';
+import helloInsetImage from './hello-small.png';
+import gps2scratchImage from './gps2scratch.png';
+import gps2scratchInsetImage from './gps2scratch-small.png';
+import speech2scratchImage from './speech2scratch.png';
+import speech2scratchInsetImage from './speech2scratch-small.png';
 
 import microbitPeripheralImage from './peripheral-connection/microbit/microbit-illustration.svg';
 import microbitMenuImage from './peripheral-connection/microbit/microbit-small.svg';
@@ -255,5 +261,43 @@ export default [
         disabled: true,
         bluetoothRequired: true,
         internetConnectionRequired: true
-    }
+    },
+    {
+      name: 'Hello',
+      extensionId: 'hello',
+      // collaborator: 'Hello',
+      iconURL: helloImage,
+      insetIconURL: helloInsetImage,
+      // description: (
+      //     <FormattedMessage
+      //         defaultMessage="Hello"
+      //         description="Hello"
+      //         id="gui.extension.hello.description"
+      //     />
+      // ),
+      featured: true,
+      // disabled: false,
+      // internetConnectionRequired: true,
+      // bluetoothRequired: false,
+      // helpLink: ''
+    },
+    {
+      name: 'GPS2Scratch',
+      extensionId: 'gps2scratch',
+      iconURL: gps2scratchImage,
+      insetIconURL: gps2scratchInsetImage,
+      featured: true,
+    },
+    {
+      name: 'Speech2Scratch',
+      extensionId: 'speech2scratch',
+      iconURL: speech2scratchImage,
+      insetIconURL: speech2scratchInsetImage,
+      featured: true,
+    },
+    {
+      name: 'Scratch2Python',
+      extensionId: 'scratch2python',
+      featured: true,
+    },
 ];
